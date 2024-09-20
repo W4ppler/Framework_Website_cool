@@ -1,6 +1,15 @@
 .navbar {
   text-align: center;
+  height: 10%;
 }
 .container{
   margin-top: 1em;
+}
+
+.fullscreen.image{
+  width: 100vw;
+  background-image:  url('../img/main_image.avif');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
