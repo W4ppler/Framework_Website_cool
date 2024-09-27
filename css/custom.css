@@ -1,43 +1,53 @@
+/* DECLARATIONS */
 @font-face {
   font-family: 'JetBrainsMono';
   src: url("../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
 }
-
-*{
-  font-family: JetBrainsMono;
-}
-
-body{
-  overflow-x: hidden;
-}
-
 @font-face {
   font-family: 'Josefin_Sans';
   src: url("../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf") format("truetype");
 }
-
-h1,h2,h3,h4,h5,h6{
-  font-family: Josefin_Sans;
+:root {
+  color-scheme: light dark;
+  --light-color: black;
+  --light-bg: #F9F7F7;
+  --light-bg-light: #DBE2EF;
+  --light-highlight: #3F72AF;
 }
 
-
+/*MEDIA BREAKPOINTS*/
 @media (max-width: 480px)
 {
-  nav{
+  .navbar {
     margin-top: 5em;
   }
 }
 
+body{
+  background-color: var(--light-bg);
+  font-family: JetBrainsMono, serif;
+  color: var(--light-color);
+}
 
+/* HEADINGS */
+h1,h2,h3,h4,h5,h6{
+  font-family: Josefin_Sans, serif;
+  strong {
+    color: var(--light-highlight);
+  }
+}
+h3::first-letter{
+  text-transform: uppercase;
+  color: var(--light-color);
+}
 
+/* OTHER */
 a{
   color: #000000;
 }
 
 .first_screen{
-  background: #f12711; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--light-bg-light); /* fallback for old browsers */
   border-radius: 25px;
 
   h2,p{
@@ -46,6 +56,7 @@ a{
     padding: 5%;
   }
 }
+
 
 
 .container{
@@ -62,10 +73,11 @@ p{
 }
 
 .row{
-  margin-bottom: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-
+/* slider */
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-250px * 7))}
@@ -90,10 +102,15 @@ p{
   }
 }
 
+/* NAV */
 nav .container{
   max-width: 1300px;
   background: #ffffff;
   text-align: center;
+}
+nav {
+  text-align: center;
+  height: 10%;
 }
 
 
