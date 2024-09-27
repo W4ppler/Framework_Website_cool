@@ -7,6 +7,10 @@
   font-family: JetBrainsMono;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'Josefin_Sans';
   src: url("../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf") format("truetype");
@@ -16,17 +20,14 @@ h1,h2,h3,h4,h5,h6{
   font-family: Josefin_Sans;
 }
 
-.navbar {
-  text-align: center;
-  height: 10%;
-}
 
 @media (max-width: 480px)
 {
-  .navbar {
+  nav{
     margin-top: 5em;
   }
 }
+
 
 
 a{
@@ -61,8 +62,7 @@ p{
 }
 
 .row{
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 
@@ -89,6 +89,13 @@ p{
     width: 250px;
   }
 }
+
+nav .container{
+  max-width: 1300px;
+  background: #ffffff;
+  text-align: center;
+}
+
 
 
 
