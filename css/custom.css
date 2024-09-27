@@ -6,6 +6,16 @@
 *{
   font-family: JetBrainsMono;
 }
+
+@font-face {
+  font-family: 'Josefin_Sans';
+  src: url("../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf") format("truetype");
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Josefin_Sans;
+}
+
 .navbar {
   text-align: center;
   height: 10%;
