@@ -13,6 +13,7 @@
   --light-bg: #F9F7F7;
   --light-bg-light: #DBE2EF;
   --light-highlight: #3F72AF;
+  --border-radius: 15px;
 }
 
 /*MEDIA BREAKPOINTS*/
@@ -42,6 +43,25 @@ h3::first-letter{
 }
 
 /* OTHER */
+
+button{
+  margin: auto;
+  display: block;
+  color: var(--light-color);
+  background-color: var(--light-bg-light);
+  border: 2px solid var(--light-bg-light);
+  border-radius: var(--border-radius);
+  scale: 1.5;
+  transition: scale 20s ease-in-out;
+}
+button:hover{
+  background-color: var(--light-highlight);
+  scale: 1000;
+
+  color: var(--light-bg);
+
+}
+
 a{
   color: #000000;
 }
