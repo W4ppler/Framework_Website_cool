@@ -38,9 +38,12 @@ h1,h2,h3,h4,h5,h6{
     color: var(--light-highlight);
   }
 }
-h3::first-letter{
-  text-transform: uppercase;
-  color: var(--light-color);
+hgroup, hgroup p{
+  background: var(--light-bg-light);
+  text-align: left;
+  padding: 5%;
+  border-radius: 15px;
+
 }
 
 /* OTHER */
@@ -80,17 +83,17 @@ p{
   overflow-wrap: break-word;
   text-align: justify;
 }
-hgroup, hgroup p{
-  background: var(--light-bg-light);
-  text-align: left;
-  padding: 5%;
-  border-radius: 15px;
+p:first-letter {
+  text-transform: uppercase;
+  font-size: 250%;
+  font-weight: bold;
+}
 
-}
 .row{
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
+
 
 /* slider */
 @keyframes scroll {
