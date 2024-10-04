@@ -43,7 +43,7 @@ hgroup, hgroup p{
   text-align: left;
   border-radius: 15px;
   margin: 0;
-  padding-left;
+  padding: 10vh 10vw 10vh 1vw
 }
 
 /* OTHER */
@@ -89,8 +89,7 @@ p:first-letter {
 }
 
 .row{
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
 
 
