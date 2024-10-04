@@ -41,9 +41,9 @@ h1,h2,h3,h4,h5,h6{
 hgroup, hgroup p{
   background: var(--light-bg-light);
   text-align: left;
-  padding: 5%;
   border-radius: 15px;
-
+  margin: 0;
+  padding-left;
 }
 
 /* OTHER */
@@ -83,10 +83,9 @@ p{
   overflow-wrap: break-word;
   text-align: justify;
 }
+
 p:first-letter {
   text-transform: uppercase;
-  font-size: 250%;
-  font-weight: bold;
 }
 
 .row{
