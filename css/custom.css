@@ -144,3 +144,12 @@ nav .container .row{
 }
 
 
+/* LIST */
+li{
+  list-style: none;
+}
+
+li::before{
+  content: "\f14a";
+  color: blue;
+}
