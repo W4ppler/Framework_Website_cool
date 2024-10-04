@@ -66,8 +66,7 @@ button{
   transition: 1s ease-in-out;
 }
 button:hover{
-  background-color: var(--light-highlight);
-  color: var(--light-bg);
+  text-decoration: wavy underline var(--light-color);
 }
 strong {
   color: var(--light-highlight);
@@ -124,37 +123,17 @@ p{
 
 /* NAV */
 nav {
-  text-align: center;
-  height: 10vh;
-  margin-top: 5vh;
-  *{
+  background: var(--light-bg-light);
+  border-radius: 15px;
+  .three img{
+    padding: 7% 0 0 6% ;
     border-radius: 0;
+    width: 75%;
   }
-  div{
-    height: 10vh;
-    width: fit-content;
-    background-color: yellow;
-    float: right;
-    button{
-      height: inherit;
-      font-size: larger;
-      margin-left: 0 !important;
-      padding-left: 4%;
-    }
-    button:last-of-type, button:first-of-type{
-      border-radius: var(--border-radius);
-    }
-    button:hover{
-      text-decoration: underline wavy;
-      background-color: inherit;
-      color: inherit;
-    }
-    img{
-
-      width: 100%;
-    }
+  .two img{
+    width: 40%;
+    padding: 8% 0 0 0;
   }
-
 }
 @media (max-width: 550px)
 {
