@@ -25,12 +25,10 @@
 
 /* GENERAL */
 
-
 body{
   background-color: var(--light-bg);
   font-family: JetBrainsMono, serif;
   color: var(--light-color);
-
 }
 *{
   transition: 1s;
@@ -63,7 +61,7 @@ button{
   background-color: var(--light-bg-light);
   border-radius: var(--border-radius);
   border: none;
-  scale: 1.5;
+
   transition: 1s ease-in-out;
 }
 button:hover{
@@ -126,12 +124,21 @@ p{
 /* NAV */
 nav {
   text-align: center;
-  height: 10%;
+  height: 10vh;
   margin-top: 5vh;
+  *{
+    border-radius: 0;
+  }
   div{
-    background-color: var(--light-bg-light);
+    height: 10vh;
+    width: fit-content;
+    background-color: yellow;
+    float: right;
     button{
-      border-radius: 0;
+      height: inherit;
+      font-size: larger;
+      margin-left: 0 !important;
+      padding-left: 4%;
     }
     button:last-of-type, button:first-of-type{
       border-radius: var(--border-radius);
@@ -141,22 +148,29 @@ nav {
       background-color: inherit;
       color: inherit;
     }
-  }
-  img{
-    height: inherit;
-  }
-}
+    img{
 
-@media (max-width: 480px)
+      width: 100%;
+    }
+  }
+
+}
+@media (max-width: 550px)
 {
+
   nav {
     img{
       margin-bottom: 5vh;
     }
     div{
-      margin-top: 10vh;
-    }
+      button{
 
+        margin: 2vh 0;
+        img{
+          width: fit-content;
+        }
+      }
+    }
   }
 }
 
