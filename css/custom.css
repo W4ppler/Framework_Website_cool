@@ -17,6 +17,12 @@
   --border-radius: 15px;
 }
 
+
+::selection{
+  background-color: #d5d5d5;
+}
+
+
 /*MEDIA BREAKPOINTS*/
 @media (max-width: 480px)
 {
@@ -43,7 +49,7 @@ hgroup, hgroup p{
   text-align: left;
   border-radius: 15px;
   margin: 0;
-  padding-left;
+  padding-left: 0;
 }
 
 /* OTHER */
@@ -145,10 +151,6 @@ nav .container .row{
 
 /* LIST */
 li{
-  list-style: none;
+  list-style-type: disc;
 }
 
-li::before{
-  content: "\f14a";
-  color: blue;
-}
