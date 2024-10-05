@@ -72,9 +72,6 @@ strong {
   color: var(--light-highlight);
 }
 
-a{
-  color: #000000;
-}
 
 img{
   border-radius: 15px;
@@ -118,6 +115,7 @@ p{
   .slide {
     height: 100px;
     width: 250px;
+
   }
 }
 
@@ -169,8 +167,9 @@ li{
 /*FOOTER*/
 footer{
   background-color: var(--light-color);
-  width: 100vw;
+  width: 100%;
   margin: 0;
+  padding: 0;
   color: var(--light-bg-light);
   text-align: center;
   .container .row{
@@ -186,6 +185,31 @@ footer{
   .row:last-of-type{
     padding-bottom: 10vh;
   }
+  ::selection{
+    background-color: var(--light-highlight);
+  }
 }
 
+.cool_button{
+  transition: 100s;
+  z-index: 1;
+}
+
+
+
+.cool_button:hover
+{
+  scale: 500;
+  transition: 250s;
+  transform: rotate(999999deg);
+}
+
+/*
+p:hover
+{
+  scale: 500;
+  transition: 250s;
+  transform: rotate(999999deg);
+}
+ */
 
