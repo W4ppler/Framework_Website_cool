@@ -55,7 +55,7 @@ hgroup{
 /* OTHER */
 
 button{
-  margin: auto;
+  margin: auto auto 3vh auto;
   display: block;
   color: var(--light-color);
   background-color: var(--light-bg-light);
@@ -164,6 +164,10 @@ nav {
     }
     }
   }
+  footer button{
+      margin-top: 5vh;
+    }
+  }
 }
 
 /* LOGOS */
@@ -202,6 +206,7 @@ footer{
   ::selection{
     background-color: var(--light-highlight);
   }
+
 }
 
 .cool_button{
