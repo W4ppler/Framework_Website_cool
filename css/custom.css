@@ -196,7 +196,7 @@ footer{
 }
 
 
-
+/*
 .cool_button:hover
 {
   scale: 500;
@@ -204,12 +204,11 @@ footer{
   transform: rotate(999999deg);
 }
 
-/*
 p:hover
 {
   scale: 500;
   transition: 250s;
   transform: rotate(999999deg);
 }
- */
+*/
 
