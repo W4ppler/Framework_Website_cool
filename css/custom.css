@@ -124,6 +124,7 @@ nav {
   border-radius: 15px;
   button{
     vertical-align: middle;
+    margin: auto
   }
 
   button:first-of-type img{
